@@ -12,7 +12,7 @@ export default function Assignments() {
         </div>
         <div className="h-96 flex flex-col justify-center items-center">
           <MdOutlineAssignment className="size-32" />
-          <p>No assignment yet.</p>
+          <p>No assignments yet.</p>
         </div>
       </div>
     </div>

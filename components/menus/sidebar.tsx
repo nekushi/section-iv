@@ -5,10 +5,18 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { sideBorderColor, toTitleCase } from "@/lib/utils";
 
-import { MdOutlineAnnouncement } from "react-icons/md";
-import { MdOutlineAssignment } from "react-icons/md";
-import { MdEventAvailable } from "react-icons/md";
-import { MdOutlineLogout } from "react-icons/md";
+import {
+  MdOutlineAnnouncement,
+  MdOutlineAssignment,
+  MdEventAvailable,
+  MdOutlineLogout,
+  MdContentPaste,
+  MdOutlineMessage,
+  MdOutlineGroup,
+  MdOutlineInsertPhoto,
+  MdInsertChartOutlined,
+  MdSchedule,
+} from "react-icons/md";
 
 export function MenuSidebar() {
   return (
@@ -26,7 +34,9 @@ export function MenuSidebar() {
               key={navItem.label}
               className={`${
                 isActivePathname &&
-                `border-l-4 ${navItem.sideColor} rounded-r-md pl-2`
+                `border-l-4 ${sideBorderColor(
+                  navItem.sideColor
+                )} rounded-r-md pl-2`
               } ${
                 !isActivePathname && "rounded"
               } hover:bg-slate-100 hover:translate-x-1 transition-transform`}
@@ -68,34 +78,56 @@ const navItems = [
     icon: <MdOutlineAnnouncement className="text-xl" />,
     label: "announcements",
     href: "/menus/announcements",
-    sideColor: sideBorderColor("amber"),
+    sideColor: "amber",
   },
   {
     icon: <MdOutlineAssignment className="text-xl" />,
     label: "assignments",
     href: "/menus/assignments",
-    sideColor: sideBorderColor("cyan"),
+    sideColor: "cyan",
   },
   {
     icon: <MdEventAvailable className="text-xl" />,
     label: "events",
     href: "/menus/events",
-    sideColor: sideBorderColor("pink"),
+    sideColor: "pink",
   },
-  { icon: "", label: "files", href: "#", sideColor: "border-l-cyan-500" },
   {
-    icon: "",
-    label: "general-chat",
-    href: "#",
-    sideColor: "border-l-cyan-500",
+    icon: <MdContentPaste className="text-xl" />,
+    label: "files",
+    href: "/menus/files",
+    sideColor: "rose",
   },
-  { icon: "", label: "members", href: "#", sideColor: "border-l-cyan-500" },
-  { icon: "", label: "photo-dumps", href: "#", sideColor: "border-l-cyan-500" },
-  { icon: "", label: "projects", href: "#", sideColor: "border-l-cyan-500" },
-  { icon: "", label: "schedule", href: "#", sideColor: "border-l-cyan-500" },
-] as const;
+  {
+    icon: <MdOutlineMessage className="text-xl" />,
+    label: "general-chat",
+    href: "/menus/general-chat",
+    sideColor: "lime",
+  },
+  {
+    icon: <MdOutlineGroup className="text-xl" />,
+    label: "members",
+    href: "/menus/members",
+    sideColor: "fuchsia",
+  },
+  {
+    icon: <MdOutlineInsertPhoto className="text-xl" />,
+    label: "photo-dump",
+    href: "/menus/photo-dump",
+    sideColor: "zinc",
+  },
+  {
+    icon: <MdInsertChartOutlined className="text-xl" />,
+    label: "projects",
+    href: "/menus/projects",
+    sideColor: "indigo",
+  },
+  {
+    icon: <MdSchedule className="text-xl" />,
+    label: "schedule",
+    href: "/menus/schedule",
+    sideColor: "emerald",
+  },
+];
 
 const profileSize: number = 42;
-
-// import { TbSquareHalf } from "react-icons/tb";
-// <TbSquareHalf />

@@ -1,9 +1,0 @@
-announcements
-assignments
-events
-files
-general-chat
-members
-photo-dumps
-projects
-schedule
