@@ -10,9 +10,14 @@ export default function Files() {
             <IoAdd />
           </button>
         </div>
-        <div className="h-96 flex flex-col justify-center items-center">
+        {/* <div className="h-96 flex flex-col justify-center items-center">
           <MdContentPaste className="size-32" />
           <p>No files yet.</p>
+        </div> */}
+        <div className="h-64 p-4">
+          <section>
+            <h2 className="text-xl font-medium">Sample ID</h2>
+          </section>
         </div>
       </div>
     </div>

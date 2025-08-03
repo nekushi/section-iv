@@ -102,7 +102,7 @@ const navItems = [
     icon: <MdOutlineMessage className="text-xl" />,
     label: "general-chat",
     href: "/menus/general-chat",
-    sideColor: "lime",
+    sideColor: "zinc",
   },
   {
     icon: <MdOutlineGroup className="text-xl" />,
@@ -114,7 +114,7 @@ const navItems = [
     icon: <MdOutlineInsertPhoto className="text-xl" />,
     label: "photo-dump",
     href: "/menus/photo-dump",
-    sideColor: "zinc",
+    sideColor: "lime",
   },
   {
     icon: <MdInsertChartOutlined className="text-xl" />,

@@ -4,9 +4,9 @@ import { IoAdd } from "react-icons/io5";
 export default function PhotoDump() {
   return (
     <div className="">
-      <div className="bg-zinc-100 rounded-4xl">
+      <div className="bg-lime-100 rounded-4xl">
         <div className="p-4 flex justify-end">
-          <button className="border border-black rounded-full p-2 text-3xl hover:bg-zinc-200 active:bg-zinc-300 transition-all">
+          <button className="border border-black rounded-full p-2 text-3xl hover:bg-lime-200 active:bg-lime-300 transition-all">
             <IoAdd />
           </button>
         </div>
